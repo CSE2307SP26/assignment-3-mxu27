@@ -15,7 +15,7 @@ do
 	java Cipher > "$student_output" 
 	
 	stud_output=$(cat "$student_output")
-	expe_output=$(cat "$expected_output")	
+	expe_output=$(cat "../$expected_output")	
 	
 	if [[ "$stud_output" == "$expe_output" ]]
 	then
